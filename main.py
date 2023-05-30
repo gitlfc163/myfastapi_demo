@@ -73,6 +73,7 @@ def get_user(db, username: str):
         return UserInDB(**user_dict)
     
 # 用于身份验证，并返回用户
+
 def authenticate_user(fake_db, username: str, password: str):
     if username not in fake_db:
         return None
