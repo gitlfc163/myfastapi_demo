@@ -3,7 +3,7 @@
 from sqlalchemy.orm import Session
 
 # 从 . import models, schemas 导入模型和模式
-from . import models, schemas
+from sql_app import models, schemas
 
 # 创建 get_user 函数，它接受一个 db 参数和一个 user_id 参数，返回数据库中的用户。
 def get_user(db: Session, user_id: int):
